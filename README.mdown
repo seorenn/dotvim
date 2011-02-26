@@ -2,3 +2,8 @@ Seorenn's .vimrc Files
 ======================
 
 Currently works. ;)
+
+Additional 3rd-party addons
+* [FuzzyFinder](http://www.vim.org/scripts/script.php?script_id=1984)
+* [L9](http://www.vim.org/scripts/script.php?script_id=3252) - Dependency for FuzzyFinder
+* [snipMate](http://www.vim.org/scripts/script.php?script_id=2540)
