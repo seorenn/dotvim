@@ -1,11 +1,19 @@
 Seorenn's .vimrc Files
 ======================
 
-Currently works. ;)
+To get and config: 
+<pre>
+$ git clone git@github.com:seorenn/dotvim.git
+$ mv dotvim ~/.vim
+$ ln -s ~/.vim/vimrc ~/.vimrc
+</pre>
 
 Additional 3rd-party addons
 ---------------------------
 
+I use these external plug-ins:
+
 * [FuzzyFinder](http://www.vim.org/scripts/script.php?script_id=1984)
 * [L9](http://www.vim.org/scripts/script.php?script_id=3252) - Dependency for FuzzyFinder
 * [snipMate](http://www.vim.org/scripts/script.php?script_id=2540)
+
