@@ -91,9 +91,11 @@ map <Leader>ff <ESC>:FufFile **/<CR>
 map <Leader>fb <ESC>:FufBuffer<CR>
 noremap <silent> <C-]> :FufTagWithCursorWord!<CR>
 
-" for Django
-"map <Leader>dt <ESC>:new<CR>:r !..\test.bat<CR>
-map <Leader>dt <ESC>:Shell..\test.bat<CR>
-
 " for python indentation
 map <Leader>ts <ESC>:%s/\t/    /g<CR>
+
+" Custom script - if you need to make private environment each machine...
+if filereadable("~/.vim/vimrc-custom")
+    source ~/.vim/vimrc-custom
+endif
+
