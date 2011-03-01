@@ -12,6 +12,7 @@ set shiftround
 set backspace=indent,eol,start
 set hlsearch
 "set sta
+set nu
 filetype plugin on
 filetype plugin indent on
 
