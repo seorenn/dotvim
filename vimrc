@@ -13,6 +13,10 @@ set backspace=indent,eol,start
 set hlsearch
 "set sta
 set nu
+
+"disable all visualbell/beep
+set vb t_vb=
+
 filetype plugin on
 filetype plugin indent on
 
@@ -55,13 +59,15 @@ nnoremap <F10> :sts <C-R><C-W><CR>
 nnoremap <F11> <C-]>
 nnoremap <F12> <C-t>
 
+noremap <C-[> <C-t>
+
 set fenc=utf-8
 set fencs=ucs-bom,utf-8,euc-kr,cp949
 set encoding=utf-8
 set listchars=extends:>,precedes:<
 
 if has("gui_running") && has("win32")
-    "Window
+    "gVim for Windows
     set encoding=cp949
     set langmenu=cp949
     set viminfo="nc:/apps/Vim/_viminfo"
@@ -77,6 +83,8 @@ elseif has("gui_running") && has("mac")
     set guioptions=grLt
     set guifont=Monaco:h11
     set clipboard=unnamed
+    "colorscheme rennlight
+    set bg=light
     winsize 120 40
 else
     "Terminal/Console
@@ -90,7 +98,6 @@ let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|class|pyc|orig)$|(^|[/\\])\
 
 map <Leader>ff <ESC>:FufFile **/<CR>
 map <Leader>fb <ESC>:FufBuffer<CR>
-noremap <silent> <C-]> :FufTagWithCursorWord!<CR>
 
 " for python indentation
 map <Leader>ts <ESC>:%s/\t/    /g<CR>

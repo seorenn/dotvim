@@ -1,7 +1,7 @@
 " Vim color file
-" Maintainer: [Seorenn] <hirenn@google.com>
+" Maintainer: [Seorenn] <hirenn@gmail.com>
 " Last Change: 2009.11.20 
-" URL: http://seorenn.egloos.com/
+" URL: http://seorenn.blogspot.com/
 
 " Visual sample command:
 "       :so $VIMRUNTIME/syntax/hitest.vim
