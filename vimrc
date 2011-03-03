@@ -59,7 +59,7 @@ nnoremap <F10> :sts <C-R><C-W><CR>
 nnoremap <F11> <C-]>
 nnoremap <F12> <C-t>
 
-noremap <C-[> <C-t>
+"noremap <C-[> <C-t>
 
 set fenc=utf-8
 set fencs=ucs-bom,utf-8,euc-kr,cp949
