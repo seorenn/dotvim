@@ -77,6 +77,12 @@ if has("gui_running") && has("win32")
     set guifont=MonacoKR:h9
     set guioptions=grLt
     winsize 120 40
+elseif has("win32unix")
+    "vim on CYGWIN
+    set encoding=cp949
+    set langmenu=cp949
+    set viminfo="~/.viminfo"
+    set bg=dark
 elseif has("gui_running") && has("mac")
     "Macvim
     set bg=light
