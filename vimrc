@@ -71,7 +71,7 @@ if has("gui_running") && has("win32")
     set encoding=cp949
     set langmenu=cp949
     set viminfo="nc:/apps/Vim/_viminfo"
-    colorscheme desert
+    colorscheme mac_classic
     set bg=dark
     set clipboard=unnamed
     set guifont=MonacoKR:h9
@@ -86,12 +86,20 @@ elseif has("win32unix")
 elseif has("gui_running") && has("mac")
     "Macvim
     set bg=light
+    colorscheme mac_classic
     set guioptions=grLt
     set guifont=Monaco:h11
     set clipboard=unnamed
-    "colorscheme rennlight
-    set bg=light
     winsize 120 40
+elseif has("gui_running")
+    "gVim on Linux?
+    set bg=light
+    colorscheme mac_classic
+    set guioptions=grLt
+    set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
+    set clipboard=unnamed
+    winsize 120 40
+    set novb
 else
     "Terminal/Console
     set bg=dark
