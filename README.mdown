@@ -17,3 +17,4 @@ I use these external plug-ins:
 * [L9](http://www.vim.org/scripts/script.php?script_id=3252) - Dependency for FuzzyFinder
 * [snipMate](http://www.vim.org/scripts/script.php?script_id=2540)
 * [vim-mac-classic-theme](https://github.com/nelstrom/vim-mac-classic-theme)
+* [vim-markdown](https://github.com/plasticboy/vim-markdown/)
