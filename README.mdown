@@ -18,3 +18,4 @@ I use these external plug-ins:
 * [snipMate](http://www.vim.org/scripts/script.php?script_id=2540)
 * [vim-mac-classic-theme](https://github.com/nelstrom/vim-mac-classic-theme)
 * [vim-markdown](https://github.com/plasticboy/vim-markdown/)
+* [vim-markdown-preview](https://github.com/robgleeson/vim-markdown-preview)
