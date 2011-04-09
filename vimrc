@@ -26,6 +26,7 @@ set tags+=../tags
 set tags+=../../tags
 set tags+=../../../tags
 set tags+=../../../../tags
+"set tags+=~/Devel/vendor/three20/src/tags
 
 "Auto Completion Option - open popup
 set completeopt=menuone,menu,longest,preview
@@ -115,6 +116,9 @@ map <Leader>fb <ESC>:FufBuffer<CR>
 
 " for python indentation
 map <Leader>ts <ESC>:%s/\t/    /g<CR>
+
+" open Dropbox notes
+map <Leader>dn <ESC>:e ~/Dropbox/notes<CR>
 
 " Custom script - if you need to make private environment each machine...
 if filereadable("~/.vim/vimrc-custom")
