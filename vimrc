@@ -66,6 +66,9 @@ set fencs=ucs-bom,utf-8,euc-kr,cp949
 set encoding=utf-8
 set listchars=extends:>,precedes:<
 
+"autocomplpop using snipMate
+let g:acp_behaviorSnipmateLength=1
+
 if has("gui_running") && has("win32")
     "gVim for Windows
     set encoding=cp949
