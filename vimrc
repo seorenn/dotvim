@@ -91,6 +91,9 @@ elseif has("gui_running") && has("mac")
     set guifont=Monaco:h11
     set clipboard=unnamed
     winsize 120 40
+    set noimd
+    set imi=1
+    set ims=-1
 elseif has("gui_running")
     "gVim on Linux?
     set bg=light
