@@ -77,6 +77,9 @@ if has("gui_running") && has("win32")
     set guifont=MonacoKR:h9
     set guioptions=grLt
     winsize 120 40
+    set noimd
+    set imi=1
+    set ims=-1
 elseif has("win32unix")
     "vim on CYGWIN
     set encoding=cp949
@@ -103,6 +106,9 @@ elseif has("gui_running")
     set clipboard=unnamed
     winsize 120 40
     set novb
+    set noimd
+    set imi=1
+    set ims=-1
 else
     "Terminal/Console
     set bg=dark
