@@ -1,7 +1,7 @@
 Seorenn's .vimrc Files
 ======================
 
-To get and config: 
+Download and configure: 
 <pre>
 $ git clone git://github.com/seorenn/dotvim.git
 $ mv dotvim ~/.vim
@@ -11,11 +11,15 @@ $ ln -s ~/.vim/vimrc ~/.vimrc
 Additional 3rd-party addons
 ---------------------------
 
-I use these external plug-ins:
+This repository contains some plugins following:
 
 * [FuzzyFinder](http://www.vim.org/scripts/script.php?script_id=1984)
 * [L9](http://www.vim.org/scripts/script.php?script_id=3252) - Dependency for FuzzyFinder
 * [snipMate](http://www.vim.org/scripts/script.php?script_id=2540)
 * [vim-mac-classic-theme](https://github.com/nelstrom/vim-mac-classic-theme)
-* [vim-markdown](https://github.com/plasticboy/vim-markdown/)
 * [vim-markdown-preview](https://github.com/robgleeson/vim-markdown-preview)
+* [vcscommand](http://www.vim.org/scripts/script.php?script_id=90)
+* [matchit.zip](http://www.vim.org/scripts/script.php?script_id=39)
+* [The NERD Commenter](http://www.vim.org/scripts/script.php?script_id=1218)
+* [Conque Shell](http://www.vim.org/scripts/script.php?script_id=2771)
+* [Align](http://www.vim.org/scripts/script.php?script_id=294)
