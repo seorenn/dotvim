@@ -67,6 +67,25 @@ set fencs=ucs-bom,utf-8,euc-kr,cp949
 set encoding=utf-8
 set listchars=extends:>,precedes:<
 
+" {{{ Autocompletion using the TAB key
+" This function determines, wether we are on the start of the line text (then tab indents) or
+" if we want to try autocompletion
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<TAB>"
+    else
+        if pumvisible()
+            return "\<C-N>"
+        else
+            return "\<C-N>\<C-P>"
+        end
+    endif
+endfunction
+" Remap the tab key to select action with InsertTabWrapper
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+" }}} Autocompletion using the TAB key
+
 if has("gui_running") && has("win32")
     "gVim for Windows
     set encoding=cp949
@@ -78,6 +97,9 @@ if has("gui_running") && has("win32")
     set guifont=MonacoKR:h9
     set guioptions=grLt
     winsize 120 40
+    set noimd
+    set imi=1
+    set ims=-1
 elseif has("win32unix")
     "vim on CYGWIN
     set encoding=cp949
@@ -92,6 +114,9 @@ elseif has("gui_running") && has("mac")
     set guifont=Monaco:h11
     set clipboard=unnamed
     winsize 120 40
+    set noimd
+    set imi=1
+    set ims=-1
 elseif has("gui_running")
     "gVim on Linux?
     set bg=light
@@ -101,6 +126,9 @@ elseif has("gui_running")
     set clipboard=unnamed
     winsize 120 40
     set novb
+    set noimd
+    set imi=1
+    set ims=-1
 else
     "Terminal/Console
     set bg=dark
