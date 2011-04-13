@@ -84,6 +84,8 @@ function! InsertTabWrapper()
 endfunction
 " Remap the tab key to select action with InsertTabWrapper
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <expr> <CR> pumvisible() ? "<C-Y><CR>" : "<CR>"
+
 " }}} Autocompletion using the TAB key
 
 if has("gui_running") && has("win32")
@@ -147,6 +149,9 @@ map <Leader>ts <ESC>:%s/\t/    /g<CR>
 
 " open Dropbox notes
 map <Leader>dn <ESC>:e ~/Dropbox/notes<CR>
+
+" shortcuts for MRU
+map <Leader>mr <ESC>:MRU<CR>
 
 " Custom script - if you need to make private environment each machine...
 if filereadable("~/.vim/vimrc-custom")

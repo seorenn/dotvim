@@ -17,9 +17,12 @@ This repository contains some plugins following:
 * [L9](http://www.vim.org/scripts/script.php?script_id=3252) - Dependency for FuzzyFinder
 * [snipMate](http://www.vim.org/scripts/script.php?script_id=2540)
 * [vim-mac-classic-theme](https://github.com/nelstrom/vim-mac-classic-theme)
+* [Markdown](http://www.vim.org/scripts/script.php?script_id=2882)
 * [vim-markdown-preview](https://github.com/robgleeson/vim-markdown-preview)
 * [vcscommand](http://www.vim.org/scripts/script.php?script_id=90)
 * [matchit.zip](http://www.vim.org/scripts/script.php?script_id=39)
 * [The NERD Commenter](http://www.vim.org/scripts/script.php?script_id=1218)
 * [Conque Shell](http://www.vim.org/scripts/script.php?script_id=2771)
 * [Align](http://www.vim.org/scripts/script.php?script_id=294)
+* [surround](http://www.vim.org/scripts/script.php?script_id=1697)
+* [MRU](http://www.vim.org/scripts/script.php?script_id=521)
