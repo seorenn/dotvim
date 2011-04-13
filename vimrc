@@ -111,7 +111,7 @@ elseif has("gui_running") && has("mac")
     set bg=light
     colorscheme mac_classic
     set guioptions=grLt
-    set guifont=Monaco:h11
+    set guifont=Monaco:h12
     set clipboard=unnamed
     winsize 120 40
     set noimd
