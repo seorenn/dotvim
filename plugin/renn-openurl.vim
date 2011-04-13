@@ -1,5 +1,6 @@
 function! OpenURL()
-    let s:uri = escape(matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*'), "#?&;|%")
+    "let s:uri = escape(matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*'), "#?&;|%")
+    let s:uri = escape(matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*'), "#&;|%")
     if s:uri != ""
         "let s:uriopen = "\"" . (expand("%:p")) . "\""
         echo s:uri
