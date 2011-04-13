@@ -150,6 +150,9 @@ map <Leader>ts <ESC>:%s/\t/    /g<CR>
 " open Dropbox notes
 map <Leader>dn <ESC>:e ~/Dropbox/notes<CR>
 
+" shortcuts for MRU
+map <Leader>mr <ESC>:MRU<CR>
+
 " Custom script - if you need to make private environment each machine...
 if filereadable("~/.vim/vimrc-custom")
     source ~/.vim/vimrc-custom
