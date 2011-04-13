@@ -84,6 +84,8 @@ function! InsertTabWrapper()
 endfunction
 " Remap the tab key to select action with InsertTabWrapper
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <expr> <CR> pumvisible() ? "<C-Y><CR>" : "<CR>"
+
 " }}} Autocompletion using the TAB key
 
 if has("gui_running") && has("win32")
