@@ -88,51 +88,32 @@ set listchars=extends:>,precedes:<
 
 " }}} Autocompletion using the TAB key
 
-if has("gui_running") && has("win32")
-    "gVim for Windows
-    set encoding=cp949
-    set langmenu=cp949
-    set viminfo="nc:/apps/Vim/_viminfo"
+if has("gui_running")
+    " settings for GUI
     colorscheme mac_classic
     set bg=dark
     set clipboard=unnamed
-    set guifont=MonacoKR:h9
     set guioptions=grLt
     winsize 120 40
     set noimd
     set imi=1
     set ims=-1
-elseif has("win32unix")
-    "vim on CYGWIN
-    set encoding=cp949
-    set langmenu=cp949
-    set viminfo="~/.viminfo"
-    set bg=dark
-elseif has("gui_running") && has("mac")
-    "Macvim
-    set bg=light
-    colorscheme mac_classic
-    set guioptions=grLt
-    set guifont=Monaco:h12
-    set clipboard=unnamed
-    winsize 120 40
-    set noimd
-    set imi=1
-    set ims=-1
-elseif has("gui_running")
-    "gVim on Linux?
-    set bg=light
-    colorscheme mac_classic
-    set guioptions=grLt
-    set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
-    set clipboard=unnamed
-    winsize 120 40
     set novb
-    set noimd
-    set imi=1
-    set ims=-1
+    set bg=light
+    colorscheme solarized
+
+    if has("win32")
+        set viminfo="nc:/apps/Vim/_viminfo"
+        set encoding=cp949
+        set langmenu=cp949
+        set guifont=MonacoKR:h9
+    elseif has("mac")
+        set guifont=Monaco:h12
+    else
+        set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
+    endif
 else
-    "Terminal/Console
+    " settings for Terminal
     set bg=dark
 endif
 
