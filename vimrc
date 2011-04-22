@@ -70,69 +70,50 @@ set listchars=extends:>,precedes:<
 " {{{ Autocompletion using the TAB key
 " This function determines, wether we are on the start of the line text (then tab indents) or
 " if we want to try autocompletion
-function! InsertTabWrapper()
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] !~ '\k'
-        return "\<TAB>"
-    else
-        if pumvisible()
-            return "\<C-N>"
-        else
-            return "\<C-N>\<C-P>"
-        end
-    endif
-endfunction
+"function! InsertTabWrapper()
+    "let col = col('.') - 1
+    "if !col || getline('.')[col - 1] !~ '\k'
+        "return "\<TAB>"
+    "else
+        "if pumvisible()
+            "return "\<C-N>"
+        "else
+            "return "\<C-N>\<C-P>"
+        "end
+    "endif
+"endfunction
 " Remap the tab key to select action with InsertTabWrapper
-inoremap <tab> <c-r>=InsertTabWrapper()<cr>
-inoremap <expr> <CR> pumvisible() ? "<C-Y><CR>" : "<CR>"
+"inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+"inoremap <expr> <CR> pumvisible() ? "<C-Y><CR>" : "<CR>"
 
 " }}} Autocompletion using the TAB key
 
-if has("gui_running") && has("win32")
-    "gVim for Windows
-    set encoding=cp949
-    set langmenu=cp949
-    set viminfo="nc:/apps/Vim/_viminfo"
+if has("gui_running")
+    " settings for GUI
     colorscheme mac_classic
     set bg=dark
     set clipboard=unnamed
-    set guifont=MonacoKR:h9
     set guioptions=grLt
     winsize 120 40
     set noimd
     set imi=1
     set ims=-1
-elseif has("win32unix")
-    "vim on CYGWIN
-    set encoding=cp949
-    set langmenu=cp949
-    set viminfo="~/.viminfo"
-    set bg=dark
-elseif has("gui_running") && has("mac")
-    "Macvim
-    set bg=light
-    colorscheme mac_classic
-    set guioptions=grLt
-    set guifont=Monaco:h12
-    set clipboard=unnamed
-    winsize 120 40
-    set noimd
-    set imi=1
-    set ims=-1
-elseif has("gui_running")
-    "gVim on Linux?
-    set bg=light
-    colorscheme mac_classic
-    set guioptions=grLt
-    set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
-    set clipboard=unnamed
-    winsize 120 40
     set novb
-    set noimd
-    set imi=1
-    set ims=-1
+    set bg=light
+    colorscheme solarized
+
+    if has("win32")
+        set viminfo="nc:/apps/Vim/_viminfo"
+        set encoding=cp949
+        set langmenu=cp949
+        set guifont=MonacoKR:h9
+    elseif has("mac")
+        set guifont=Monaco:h12
+    else
+        set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
+    endif
 else
-    "Terminal/Console
+    " settings for Terminal
     set bg=dark
 endif
 
