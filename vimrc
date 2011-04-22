@@ -98,7 +98,7 @@ if has("gui_running")
     set noimd
     set imi=1
     set ims=-1
-    set novb
+    "set novb
     set bg=light
     colorscheme solarized
 
