@@ -110,7 +110,6 @@ endfunction
 
 if has("gui_running")
     " settings for GUI
-    colorscheme mac_classic
     set bg=dark
     set clipboard=unnamed
     set guioptions=grLt
@@ -119,8 +118,10 @@ if has("gui_running")
     set imi=1
     set ims=-1
     "set novb
-    set bg=light
-    colorscheme solarized
+    "set bg=light
+    set bg=dark
+    "colorscheme solarized
+    colorscheme greyblue
 
     if has("win32")
         set viminfo="nc:/apps/Vim/_viminfo"
@@ -153,6 +154,9 @@ map <Leader>dn <ESC>:e ~/Dropbox/notes<CR>
 
 " shortcuts for MRU
 map <Leader>mr <ESC>:MRU<CR>
+
+" shortcuts for NERDTree
+map <Leader>nt <ESC>:NERDTree<CR>
 
 " Custom script - if you need to make private environment each machine...
 if filereadable("~/.vim/vimrc-custom")
