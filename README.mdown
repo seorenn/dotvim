@@ -26,3 +26,4 @@ This repository contains some plugins following:
 * [Align](http://www.vim.org/scripts/script.php?script_id=294)
 * [surround](http://www.vim.org/scripts/script.php?script_id=1697)
 * [MRU](http://www.vim.org/scripts/script.php?script_id=521)
+* [NERDTree](https://github.com/scrooloose/nerdtree)
