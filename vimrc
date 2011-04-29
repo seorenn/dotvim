@@ -119,9 +119,8 @@ if has("gui_running")
     set ims=-1
     "set novb
     "set bg=light
-    set bg=dark
-    "colorscheme solarized
-    colorscheme greyblue
+    set bg=light
+    colorscheme solarized
 
     if has("win32")
         set viminfo="nc:/apps/Vim/_viminfo"
