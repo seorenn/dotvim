@@ -87,6 +87,10 @@ function! Org_after_todo_state_change_hook(line,state1, state2)
         "call append(line("."), repeat(' ',len(matchstr(getline(line(".")),'^\s*'))) . str)
 endfunction
 
+" VimOrganizer: My Agenda Files
+let g:agenda_files = ['~/Dropbox/notes/todo.org', '~/Dropbox/notes/worktodo.org']
+let g:agenda_dirs = ["~/Dropbox/notes"]
+
 " {{{ Autocompletion using the TAB key
 " This function determines, wether we are on the start of the line text (then tab indents) or
 " if we want to try autocompletion
