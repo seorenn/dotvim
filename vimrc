@@ -69,46 +69,24 @@ set encoding=utf-8
 "set listchars=extends:>,precedes:<,tab:�\ ,eol:�
 set listchars=extends:>,precedes:<
 
-" VimOrganizer Setup
-let g:org_todo_setup = 'TODO | DONE'
-au! BufRead,BufWrite,BufWritePost,BufNewFile *.org 
-au BufRead,BufNewFile *.org            call org#SetOrgFileType()
-au BufRead *.org :PreLoadTags
-au BufWrite *.org :PreWriteTags
-au BufWritePost *.org :PostWriteTags
-
-function! Org_property_changed_functions(line,key, val)
-        "call confirm("prop changed: ".a:line."--key:".a:key." val:".a:val)
-endfunction
-function! Org_after_todo_state_change_hook(line,state1, state2)
-        "call ConfirmDrawer("LOGBOOK")
-        "let str = ": - State: " . Pad(a:state2,10) . "   from: " . Pad(a:state1,10) .
-        "            \ '    [' . Timestamp() . ']'
-        "call append(line("."), repeat(' ',len(matchstr(getline(line(".")),'^\s*'))) . str)
-endfunction
-
-" VimOrganizer: My Agenda Files
-let g:agenda_files = ['~/Dropbox/notes/todo.org', '~/Dropbox/notes/worktodo.org']
-let g:agenda_dirs = ["~/Dropbox/notes"]
-
 " {{{ Autocompletion using the TAB key
 " This function determines, wether we are on the start of the line text (then tab indents) or
 " if we want to try autocompletion
-"function! InsertTabWrapper()
-    "let col = col('.') - 1
-    "if !col || getline('.')[col - 1] !~ '\k'
-        "return "\<TAB>"
-    "else
-        "if pumvisible()
-            "return "\<C-N>"
-        "else
-            "return "\<C-N>\<C-P>"
-        "end
-    "endif
-"endfunction
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<TAB>"
+    else
+        if pumvisible()
+            return "\<C-N>"
+        else
+            return "\<C-N>\<C-P>"
+        end
+    endif
+endfunction
 " Remap the tab key to select action with InsertTabWrapper
-"inoremap <tab> <c-r>=InsertTabWrapper()<cr>
-"inoremap <expr> <CR> pumvisible() ? "<C-Y><CR>" : "<CR>"
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <expr> <CR> pumvisible() ? "<C-Y><CR>" : "<CR>"
 
 " }}} Autocompletion using the TAB key
 
