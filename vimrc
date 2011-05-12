@@ -69,6 +69,9 @@ set encoding=utf-8
 "set listchars=extends:>,precedes:<,tab:�\ ,eol:�
 set listchars=extends:>,precedes:<
 
+"Vim 7.3 or higher version support OS X clipboard in console"
+set clipboard=unnamed
+
 " {{{ Autocompletion using the TAB key
 " This function determines, wether we are on the start of the line text (then tab indents) or
 " if we want to try autocompletion
@@ -93,7 +96,6 @@ inoremap <expr> <CR> pumvisible() ? "<C-Y><CR>" : "<CR>"
 if has("gui_running")
     " settings for GUI
     set bg=dark
-    set clipboard=unnamed
     set guioptions=grLt
     winsize 120 40
     set noimd
