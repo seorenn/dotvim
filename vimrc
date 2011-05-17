@@ -118,7 +118,9 @@ if has("gui_running")
     endif
 else
     " settings for Terminal
-    set bg=dark
+    " I use solarized theme dakr for OS X Terminal
+    ""colorscheme solarized
+    set bg=light
 endif
 
 syntax on
