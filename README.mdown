@@ -22,7 +22,6 @@ This repository contains some plugins following:
 * [vcscommand](http://www.vim.org/scripts/script.php?script_id=90)
 * [matchit.zip](http://www.vim.org/scripts/script.php?script_id=39)
 * [The NERD Commenter](http://www.vim.org/scripts/script.php?script_id=1218)
-* [Conque Shell](http://www.vim.org/scripts/script.php?script_id=2771)
 * [Align](http://www.vim.org/scripts/script.php?script_id=294)
 * [surround](http://www.vim.org/scripts/script.php?script_id=1697)
 * [MRU](http://www.vim.org/scripts/script.php?script_id=521)
