@@ -6,7 +6,7 @@ set ai
 "set ci
 "set si
 set et
-set noic
+set ic
 set ruler
 set shiftround
 set backspace=indent,eol,start
@@ -142,6 +142,8 @@ map <Leader>mr <ESC>:MRU<CR>
 
 " shortcuts for NERDTree
 map <Leader>nt <ESC>:NERDTree<CR>
+
+map <Leader>oo <ESC>:call OpenUrl()<CR>
 
 " Custom script - if you need to make private environment each machine...
 if filereadable("~/.vim/vimrc-custom")

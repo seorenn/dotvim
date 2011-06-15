@@ -1,4 +1,4 @@
-function! OpenURL()
+function! RennOpenURL()
     "let s:uri = escape(matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*'), "#?&;|%")
     let s:uri = escape(matchstr(getline("."), '[a-z]*:\/\/[^ >,;:]*'), "#;|%")
     if s:uri != ""
@@ -13,4 +13,4 @@ function! OpenURL()
     endif
 endfunction
 
-map <Leader>oo :call OpenURL()<CR>
+""map <Leader>oo :call OpenURL()<CR>
