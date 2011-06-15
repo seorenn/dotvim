@@ -120,7 +120,7 @@ else
     " settings for Terminal
     " I use solarized theme dakr for OS X Terminal
     ""colorscheme solarized
-    set bg=light
+    set bg=dark
 endif
 
 syntax on
