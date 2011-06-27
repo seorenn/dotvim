@@ -118,9 +118,11 @@ if has("gui_running")
     endif
 else
     " settings for Terminal
-    " I use solarized theme dakr for OS X Terminal
-    ""colorscheme solarized
     set bg=dark
+    " settings for scrolling-performance
+    set ttyfast
+    set ttyscroll=3
+    set lazyredraw
 endif
 
 syntax on
