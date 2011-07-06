@@ -120,9 +120,9 @@ else
     " settings for Terminal
     set bg=dark
     " settings for scrolling-performance
-    set ttyfast
-    set ttyscroll=3
-    set lazyredraw
+    "set ttyfast
+    "set ttyscroll=3
+    "set lazyredraw
 endif
 
 syntax on
@@ -143,7 +143,7 @@ map <Leader>dn <ESC>:e ~/Dropbox/notes<CR>
 map <Leader>mr <ESC>:MRU<CR>
 
 " shortcuts for NERDTree
-map <Leader>nt <ESC>:NERDTree<CR>
+"map <Leader>nt <ESC>:NERDTree<CR>
 
 map <Leader>oo <ESC>:call OpenUrl()<CR>
 
