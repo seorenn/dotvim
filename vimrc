@@ -26,6 +26,10 @@ set tags+=../tags
 set tags+=../../tags
 set tags+=../../../tags
 set tags+=../../../../tags
+set tags+=../../../../../tags
+set tags+=../../../../../../tags
+set tags+=../../../../../../../tags
+set tags+=../../../../../../../../tags
 "set tags+=~/Devel/vendor/three20/src/tags
 
 "Auto Completion Option - open popup
