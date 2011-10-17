@@ -20,6 +20,11 @@ set vb t_vb=
 filetype plugin on
 filetype plugin indent on
 
+""""" Tab Sizes for Each Source Codes
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2
+autocmd FileType html setlocal ts=2 sts=2 sw=2
+"autocmd FileType python setlocal ts=4 sts=4 sw=4
+
 "Ctags tag file paths
 set tags=./tags,tags
 set tags+=../tags
