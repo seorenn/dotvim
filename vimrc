@@ -17,6 +17,7 @@ set nu
 "disable all visualbell/beep
 set vb t_vb=
 
+filetype on
 filetype plugin on
 filetype plugin indent on
 
