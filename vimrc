@@ -137,6 +137,9 @@ endif
 
 syntax on
 
+" Toggle Paste <-> No Paste Mode
+map <Leader>pp :set invpaste<CR>
+
 " configuration: FuzzyFinder
 let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|class|pyc|orig)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
 
