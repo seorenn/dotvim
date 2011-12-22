@@ -2,24 +2,30 @@ set nocompatible
 set ts=4
 set sts=4
 set sw=4
-set ai
-"set ci
-"set si
+set ai  "autoindent
+"set ci "cindent
+"set si "smartindent
 set et
-set ic
+set ic  "ignorecase
 set ruler
 set shiftround
 set backspace=indent,eol,start
 set hlsearch
 "set sta
+set nobackup
+set incsearch
+set nowrapscan
 set nu
+set backspace=eol,start,indent
 
 "disable all visualbell/beep
 set vb t_vb=
 
-filetype on
-filetype plugin on
-filetype plugin indent on
+if has("autocmd")
+    filetype on
+    filetype plugin on
+    filetype plugin indent on
+endif
 
 """"" Tab Sizes for Each Source Codes
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2
