@@ -1,13 +1,39 @@
 set nocompatible
+
+let $GIT_SSL_NO_VERIFY = 'true'
+
+filetype on     
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" tricks: vundle managing vundle ;)
+Bundle 'gmarik/vundle'
+
+" my bundles -----
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'neocomplcache'
+Bundle 'snipMate'
+Bundle 'The-NERD-tree'
+Bundle 'Markdown'
+Bundle 'jQuery'
+" end of my bundles -----
+
+set backspace=indent,eol,start
 set ts=4
 set sts=4
 set sw=4
 set ai  "autoindent
-"set ci "cindent
+set cindent
+set cinoptions=:s,ps,ts,cs
+set cinwords=if,else,white,do,for,switch,case
 "set si "smartindent
 set et
 set ic  "ignorecase
-set ruler
+set smartcase
+set smarttab
 set shiftround
 set backspace=indent,eol,start
 set hlsearch
@@ -17,15 +43,27 @@ set incsearch
 set nowrapscan
 set nu
 set backspace=eol,start,indent
+set laststatus=2
+set ruler
+set showcmd
+set foldenable
+set foldmethod=marker
+set foldlevel=100
+set foldopen=block,hor,mark,percent,quickfix,tag
+
+set splitbelow
+set splitright
 
 "disable all visualbell/beep
 set vb t_vb=
 
-if has("autocmd")
-    filetype on
-    filetype plugin on
-    filetype plugin indent on
-endif
+"if has("autocmd")
+"    filetype on
+"    filetype plugin on
+"    filetype plugin indent on
+"endif
+
+filetype plugin indent on
 
 """"" Tab Sizes for Each Source Codes
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2
