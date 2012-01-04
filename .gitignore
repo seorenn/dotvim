@@ -1,4 +1,4 @@
 vimrc-custom
-.*
 *.pyc
 bundle
+.netrwhist
