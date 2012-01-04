@@ -14,7 +14,7 @@ $ git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 </pre>
 
 Install Bundles with vundle
-* run vim
-* :BundleInstall
-* (restart vim)
 
+ * run vim
+ * :BundleInstall
+ * (restart vim)
