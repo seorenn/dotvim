@@ -19,6 +19,7 @@ Bundle 'snipMate'
 Bundle 'The-NERD-tree'
 Bundle 'Markdown'
 Bundle 'jQuery'
+Bundle 'pyflakes.vim'
 " end of my bundles -----
 
 set backspace=indent,eol,start
