@@ -259,7 +259,7 @@ map <Leader>dn <ESC>:e ~/Dropbox/notes<CR>
 map <Leader>mr <ESC>:MRU<CR>
 
 " shortcuts for NERDTree
-"map <Leader>nt <ESC>:NERDTree<CR>
+map <Leader>nt <ESC>:NERDTree<CR>
 
 map <Leader>oo <ESC>:call OpenUrl()<CR>
 
