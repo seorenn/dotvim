@@ -21,6 +21,7 @@ Bundle 'Markdown'
 Bundle 'jQuery'
 Bundle 'pyflakes.vim'
 Bundle 'TaskList.vim'
+Bundle 'JavaScript-Indent'
 " end of my bundles -----
 
 set backspace=indent,eol,start
@@ -232,6 +233,7 @@ if has("gui_running")
 else
     " settings for Terminal
     set bg=dark
+    colorscheme desert
     " settings for scrolling-performance
     "set ttyfast
     "set ttyscroll=3

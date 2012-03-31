@@ -2,3 +2,4 @@ vimrc-custom
 *.pyc
 bundle
 .netrwhist
+*.swp
