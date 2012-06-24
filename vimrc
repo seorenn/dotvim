@@ -19,7 +19,7 @@ Bundle 'snipMate'
 Bundle 'The-NERD-tree'
 Bundle 'Markdown'
 Bundle 'jQuery'
-Bundle 'pyflakes.vim'
+"Bundle 'pyflakes.vim'
 Bundle 'TaskList.vim'
 Bundle 'JavaScript-Indent'
 " end of my bundles -----
