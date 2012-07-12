@@ -233,7 +233,8 @@ if has("gui_running")
 else
     " settings for Terminal
     set bg=dark
-    colorscheme desert
+    colorscheme Tomorrow-Night-Bright
+    "colorscheme desert
     " settings for scrolling-performance
     "set ttyfast
     "set ttyscroll=3
