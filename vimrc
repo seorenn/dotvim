@@ -22,6 +22,8 @@ Bundle 'jQuery'
 Bundle 'pyflakes.vim'
 Bundle 'TaskList.vim'
 Bundle 'JavaScript-Indent'
+Bundle 'coffee.vim'
+Bundle 'vim-coffee-script'
 " end of my bundles -----
 
 set backspace=indent,eol,start
