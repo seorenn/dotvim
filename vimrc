@@ -268,6 +268,9 @@ map <Leader>nt <ESC>:NERDTree<CR>
 
 map <Leader>oo <ESC>:call OpenUrl()<CR>
 
+" Processors for File Saving "
+autocmd BufWritePost,FileWritePost *.coffee silent !coffee -c <afile>
+
 " Custom script - if you need to make private environment each machine...
 if filereadable("~/.vim/vimrc-custom")
     source ~/.vim/vimrc-custom
