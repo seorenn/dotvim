@@ -20,7 +20,6 @@ Bundle 'The-NERD-tree'
 Bundle 'Markdown'
 Bundle 'jQuery'
 Bundle 'pyflakes.vim'
-Bundle 'TaskList.vim'
 Bundle 'JavaScript-Indent'
 Bundle 'coffee.vim'
 Bundle 'vim-coffee-script'
@@ -71,8 +70,9 @@ set vb t_vb=
 filetype plugin indent on
 
 """"" Tab Sizes for Each Source Codes
-autocmd FileType javascript setlocal ts=2 sts=2 sw=2
-autocmd FileType html setlocal ts=2 sts=2 sw=2
+"autocmd FileType javascript setlocal ts=2 sts=2 sw=2
+"autocmd FileType html setlocal ts=2 sts=2 sw=2
+"autocmd FileType js setlocal ts=2 sts=2 sw=2
 "autocmd FileType python setlocal ts=4 sts=4 sw=4
 
 "Ctags tag file paths
@@ -263,7 +263,8 @@ map <Leader>dn <ESC>:e ~/Dropbox/notes<CR>
 " shortcuts for MRU
 map <Leader>mr <ESC>:MRU<CR>
 
-" shortcuts for NERDTree
+" NERDTree
+let NERDTreeIgnore = ['\.pyc$', '\.o$']
 map <Leader>nt <ESC>:NERDTree<CR>
 
 map <Leader>oo <ESC>:call OpenUrl()<CR>
