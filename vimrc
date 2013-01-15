@@ -23,6 +23,7 @@ Bundle 'pyflakes.vim'
 Bundle 'JavaScript-Indent'
 Bundle 'coffee.vim'
 Bundle 'vim-coffee-script'
+Bundle 'The-NERD-Commenter'
 " end of my bundles -----
 
 set backspace=indent,eol,start
