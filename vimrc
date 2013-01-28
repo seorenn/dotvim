@@ -24,6 +24,7 @@ Bundle 'JavaScript-Indent'
 Bundle 'coffee.vim'
 Bundle 'vim-coffee-script'
 Bundle 'The-NERD-Commenter'
+Bundle 'Solarized'
 " end of my bundles -----
 
 set backspace=indent,eol,start
@@ -235,8 +236,11 @@ if has("gui_running")
     endif
 else
     " settings for Terminal
+    let g:solarized_termcolors = 256
+    let g:solarized_termtrans = 1
     set bg=dark
-    colorscheme Tomorrow-Night-Bright
+    colorscheme solarized
+    "colorscheme Tomorrow-Night-Bright
     "colorscheme desert
     " settings for scrolling-performance
     "set ttyfast
