@@ -25,6 +25,7 @@ Bundle 'coffee.vim'
 Bundle 'vim-coffee-script'
 Bundle 'The-NERD-Commenter'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'SearchComplete'
 " end of my bundles -----
 
 set backspace=indent,eol,start
@@ -222,7 +223,7 @@ if has("gui_running")
     "set novb
     "set bg=light
     set bg=light
-    colorscheme solarized
+    colorscheme Tomorrow-Night-Bright
 
     if has("win32")
         set viminfo="nc:/apps/Vim/_viminfo"
@@ -241,11 +242,11 @@ else
 
     "Solarized Options"
     let g:solarized_termcolors = 16
-    "let g:solarized_termtrans = 1
+    let g:solarized_termtrans = 1
     "let g:solatized_visibility = "low"
-    "let g:solarized_contrast = "low"
-    colorscheme solarized
-    "colorscheme Tomorrow-Night-Bright
+    "let g:solarized_contrast = "high"
+    "colorscheme Distinguished
+    colorscheme Tomorrow-Night-Bright
 endif
 
 syntax on
