@@ -2,7 +2,7 @@ set nocompatible
 
 let $GIT_SSL_NO_VERIFY = 'true'
 
-filetype on     
+filetype on
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
@@ -16,22 +16,15 @@ Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'Shougo/neocomplcache.git'
 Bundle 'Shougo/neosnippet.git'
-"Bundle 'snipMate'
 Bundle 'The-NERD-tree'
 Bundle 'Markdown'
-Bundle 'jQuery'
 Bundle 'pyflakes.vim'
-Bundle 'JavaScript-Indent'
-Bundle 'coffee.vim'
-Bundle 'vim-coffee-script'
 Bundle 'The-NERD-Commenter'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'SearchComplete'
 Bundle 'TaskList.vim'
-"Bundle 'https://github.com/Lokaltog/powerline'
-Bundle 'Lokaltog/powerline.git'
-"Bundle 'https://github.com/airblade/vim-gitgutter.git'
 Bundle 'airblade/vim-gitgutter.git'
+Bundle "pangloss/vim-javascript"
 " end of my bundles -----
 
 set backspace=indent,eol,start
@@ -42,15 +35,13 @@ set ai  "autoindent
 set cindent
 set cinoptions=:s,ps,ts,cs
 set cinwords=if,else,white,do,for,switch,case
-"set si "smartindent
 set et
-set ic  "ignorecase
+set ic
 set smartcase
 set smarttab
 set shiftround
 set backspace=indent,eol,start
 set hlsearch
-"set sta
 set nobackup
 set incsearch
 set nowrapscan
@@ -67,24 +58,11 @@ set foldopen=block,hor,mark,percent,quickfix,tag
 set splitbelow
 set splitright
 
-"disable all visualbell/beep
 set vb t_vb=
-
-"if has("autocmd")
-"    filetype on
-"    filetype plugin on
-"    filetype plugin indent on
-"endif
 
 filetype plugin indent on
 
-""""" Tab Sizes for Each Source Codes
-"autocmd FileType javascript setlocal ts=2 sts=2 sw=2
-"autocmd FileType html setlocal ts=2 sts=2 sw=2
-"autocmd FileType js setlocal ts=2 sts=2 sw=2
-"autocmd FileType python setlocal ts=4 sts=4 sw=4
-
-"Ctags tag file paths
+" Ctags tag file paths ----------------
 set tags=./tags,tags
 set tags+=../tags
 set tags+=../../tags
@@ -140,15 +118,11 @@ set listchars=extends:>,precedes:<
 "Vim 7.3 or higher version support OS X clipboard in console"
 set clipboard=unnamed
 
-""""" PowerLine """""
-set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
-set fillchars+=stl:\ ,stlnc:\
+" JavaScript-Indent -------------------------------------
+" Disable logging
+let g:js_indent_log = 0
 
-""""" Decoration """""
-" Hide window border background
-"highlight VertSplit cterm=none gui=none
-
-""""" Settings for neocomplecache """""
+" Settings for neocomplecache ----------------------------
 
 let g:neocomplcache_enable_at_startup = 1
 let g:neocomplcache_enable_smart_case = 1
@@ -193,7 +167,7 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
-" Enable heavy omni completion, which require computational power and may stall the vim. 
+" Enable heavy omni completion, which require computational power and may stall the vim.
 if !exists('g:neocomplcache_omni_patterns')
   let g:neocomplcache_omni_patterns = {}
 endif
@@ -307,4 +281,3 @@ highlight clear SignColumn
 if filereadable("~/.vim/vimrc-custom")
     source ~/.vim/vimrc-custom
 endif
-
