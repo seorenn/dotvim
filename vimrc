@@ -215,7 +215,8 @@ if has("gui_running")
     "set novb
     "set bg=light
     set bg=light
-    colorscheme Tomorrow-Night-Bright
+    "colorscheme Tomorrow-Night-Bright
+    colorscheme twilight256
 
     if has("win32")
         set viminfo="nc:/apps/Vim/_viminfo"
@@ -239,38 +240,15 @@ else
     "let g:solarized_contrast = "high"
     "colorscheme Distinguished
     "colorscheme Tomorrow-Night-Bright
-    colorscheme solarized
+    "colorscheme solarized
+    colorscheme twilight256
 endif
 
 """ Tab Integration """
 " from http://qiita.com/wadako111@github/items/755e753677dd72d8036d
+" Removed.
 
-" Anywhere SID.
-function! s:SID_PREFIX()
-    return matchstr(expand('<sfile>'), '<SNR>\d\+_\zeSID_PREFIX$')
-endfunction
-
-" Set tabline.
-function! s:my_tabline()  "{{{
-    let s = ''
-    for i in range(1, tabpagenr('$'))
-        let bufnrs = tabpagebuflist(i)
-        let bufnr = bufnrs[tabpagewinnr(i) - 1]  " first window, first appears
-        let no = i  " display 0-origin tabpagenr.
-        let mod = getbufvar(bufnr, '&modified') ? '!' : ' '
-        let title = fnamemodify(bufname(bufnr), ':t')
-        let title = '[' . title . ']'
-        let s .= '%'.i.'T'
-        let s .= '%#' . (i == tabpagenr() ? 'TabLineSel' : 'TabLine') . '#'
-        let s .= no . ':' . title
-        let s .= mod
-        let s .= '%#TabLineFill# '
-    endfor
-    let s .= '%#TabLineFill#%T%=%#TabLine#'
-    return s
-endfunction "}}}
-let &tabline = '%!'. s:SID_PREFIX() . 'my_tabline()'
-set showtabline=2 " 常にタブラインを表示
+set switchbuf=usetab
 
 " The prefix key.
 nnoremap    [Tag]   <Nop>
