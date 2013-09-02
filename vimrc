@@ -238,11 +238,12 @@ syntax on
 " Toggle Paste <-> No Paste Mode
 map <Leader>pp :set invpaste<CR>
 
-" configuration: FuzzyFinder
-let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|class|pyc|orig)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])'
+" FuzzyFinder Configurations -------------------------------
+let g:fuf_file_exclude = '\v\~$|\.(o|exe|dll|bak|swp|class|pyc|orig)$|(^|[/\\])\.(hg|git|bzr)($|[/\\])|(lib|include)\/python.*|bin\/.*'
 
 map <Leader>ff <ESC>:FufFile **/<CR>
 map <Leader>fb <ESC>:FufBuffer<CR>
+" -------------- end of FuzzyFinder Configurations
 
 " for python indentation
 map <Leader>ts <ESC>:%s/\t/    /g<CR>
