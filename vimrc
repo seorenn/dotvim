@@ -20,11 +20,10 @@ Bundle 'The-NERD-tree'
 Bundle 'Markdown'
 Bundle 'pyflakes.vim'
 Bundle 'The-NERD-Commenter'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'SearchComplete'
 Bundle 'TaskList.vim'
 Bundle 'airblade/vim-gitgutter.git'
-Bundle "pangloss/vim-javascript"
+Bundle 'pangloss/vim-javascript'
 " end of my bundles -----
 
 set backspace=indent,eol,start
@@ -75,9 +74,9 @@ set tags+=../../../../../../../../tags
 "set tags+=~/Devel/vendor/three20/src/tags
 
 "Auto Completion Option - open popup
-set completeopt=menuone,menu,longest,preview
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+"set completeopt=menuone,menu,longest,preview
+"autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+"autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
 "Move window use C-j/k/lh/l
 noremap <C-J> <C-W>j
@@ -145,8 +144,8 @@ endif
 let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 
 " Plugin key-mappings.
-imap <C-k>     <Plug>(neocomplcache_snippets_expand)
-smap <C-k>     <Plug>(neocomplcache_snippets_expand)
+"imap <C-k>     <Plug>(neocomplcache_snippets_expand)
+"smap <C-k>     <Plug>(neocomplcache_snippets_expand)
 inoremap <expr><C-g>     neocomplcache#undo_completion()
 inoremap <expr><C-l>     neocomplcache#complete_common_string()
 
@@ -178,10 +177,6 @@ let g:neocomplcache_omni_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
 let g:neocomplcache_omni_patterns.c = '\%(\.\|->\)\h\w*'
 let g:neocomplcache_omni_patterns.cpp = '\h\w*\%(\.\|->\)\h\w*\|\h\w*::'
 
-let g:neosnippet#enable_snipmate_compatibility = 1
-
-let g:neosnippet#snippets_directory = '~/.vim/snippets/'
-
 """"" End of settings for neocomplecache """""
 
 """"" NeoSnippet """""
@@ -199,6 +194,12 @@ if has('conceal')
   set conceallevel=2 concealcursor=i
 endif
 
+" Enable snipMate compatibility feature.
+let g:neosnippet#enable_snipmate_compatibility = 1
+
+" Tell Neosnippet about the other snippets
+let g:neosnippet#snippets_directory='~/.vim/snippets'
+
 """"" End of NeoSnippet
 
 " pyflakes.vim Color
@@ -212,10 +213,7 @@ if has("gui_running")
     set noimd
     set imi=1
     set ims=-1
-    "set novb
-    "set bg=light
     set bg=light
-    "colorscheme Tomorrow-Night-Bright
     colorscheme twilight256
 
     if has("win32")
@@ -232,43 +230,8 @@ else
     " settings for Terminal
     syntax on
     set bg=dark
-
-    "Solarized Options"
-    let g:solarized_termcolors = 16
-    let g:solarized_termtrans = 1
-    "let g:solatized_visibility = "low"
-    "let g:solarized_contrast = "high"
-    "colorscheme Distinguished
-    "colorscheme Tomorrow-Night-Bright
-    "colorscheme solarized
     colorscheme twilight256
 endif
-
-""" Tab Integration """
-" from http://qiita.com/wadako111@github/items/755e753677dd72d8036d
-" Removed.
-
-set switchbuf=usetab
-
-" The prefix key.
-nnoremap    [Tag]   <Nop>
-nmap        t       [Tag]
-" Tab jump
-for n in range(1, 9)
-    execute 'nnoremap <silent> [Tag]'.n  ':<C-u>tabnext'.n.'<CR>'
-endfor
-" t1 で1番左のタブ、t2 で1番左から2番目のタブにジャンプ
-
-map <silent> [Tag]c :tablast <bar> tabnew<CR>
-" tc 新しいタブを一番右に作る
-map <silent> [Tag]x :tabclose<CR>
-" tx タブを閉じる
-map <silent> [Tag]n :tabnext<CR>
-" tn 次のタブ
-map <silent> [Tag]p :tabprevious<CR>
-" tp 前のタブ
-
-""""" End of Tab Integration """""
 
 syntax on
 
