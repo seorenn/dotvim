@@ -24,6 +24,7 @@ Bundle 'SearchComplete'
 Bundle 'TaskList.vim'
 Bundle 'airblade/vim-gitgutter.git'
 Bundle 'pangloss/vim-javascript'
+Bundle 'Solarized'
 " end of my bundles -----
 
 set backspace=indent,eol,start
@@ -72,6 +73,9 @@ set tags+=../../../../../../tags
 set tags+=../../../../../../../tags
 set tags+=../../../../../../../../tags
 "set tags+=~/Devel/vendor/three20/src/tags
+
+" air-line powerline integration
+let g:airline_powerline_fonts = 0
 
 "Auto Completion Option - open popup
 "set completeopt=menuone,menu,longest,preview
