@@ -234,7 +234,11 @@ else
     " settings for Terminal
     syntax on
     set bg=dark
-    colorscheme twilight256
+    "Solarized Options"
+    let g:solarized_visibility = "high"
+    let g:golarized_contrast = "high"
+    let g:solarized_termcolors = 16
+    colorscheme solarized
 endif
 
 syntax on
