@@ -5,11 +5,11 @@ let $GIT_SSL_NO_VERIFY = 'true'
 filetype on
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " tricks: vundle managing vundle ;)
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " my bundles -----
 Bundle 'L9'
@@ -26,6 +26,10 @@ Bundle 'airblade/vim-gitgutter.git'
 Bundle 'pangloss/vim-javascript'
 Bundle 'Solarized'
 " end of my bundles -----
+
+call vundle#end()
+
+filetype plugin indent on
 
 set backspace=indent,eol,start
 set ts=4

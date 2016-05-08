@@ -1,2 +1,2 @@
 #!/bin/sh
-exec git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+exec git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
