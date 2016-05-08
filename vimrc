@@ -1,3 +1,6 @@
+filetype on
+filetype off
+
 set nocompatible
 
 let $GIT_SSL_NO_VERIFY = 'true'
@@ -12,19 +15,19 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " my bundles -----
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-Bundle 'Shougo/neocomplcache.git'
-Bundle 'Shougo/neosnippet.git'
-Bundle 'The-NERD-tree'
-Bundle 'Markdown'
-Bundle 'pyflakes.vim'
-Bundle 'The-NERD-Commenter'
-Bundle 'SearchComplete'
-Bundle 'TaskList.vim'
-Bundle 'airblade/vim-gitgutter.git'
-Bundle 'pangloss/vim-javascript'
-Bundle 'Solarized'
+Plugin 'L9'
+Plugin 'FuzzyFinder'
+Plugin 'Shougo/neocomplcache.git'
+Plugin 'Shougo/neosnippet.git'
+Plugin 'The-NERD-tree'
+Plugin 'Markdown'
+Plugin 'pyflakes.vim'
+Plugin 'The-NERD-Commenter'
+Plugin 'SearchComplete'
+Plugin 'TaskList.vim'
+Plugin 'airblade/vim-gitgutter.git'
+Plugin 'pangloss/vim-javascript'
+Plugin 'Solarized'
 " end of my bundles -----
 
 call vundle#end()
@@ -64,7 +67,6 @@ set splitright
 
 set vb t_vb=
 
-filetype plugin indent on
 
 " Ctags tag file paths ----------------
 set tags=./tags,tags
