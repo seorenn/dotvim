@@ -1,24 +1,20 @@
 Seorenn's .vimrc Files
 ======================
 
-Download and link configuration file: 
+I used a lot of Vim plugins before. But I felt it was not in a good way. Because, I used Vim to editing on demand. I did not need many plugins at all.
+
+So my dotvim becomes a just vanilla configuration.
+
+How to use?
+
+Just clone and link configuration file: 
+
 <pre>
 $ git clone git://github.com/seorenn/dotvim.git
 $ mv dotvim ~/.vim
 $ ln -s ~/.vim/vimrc ~/.vimrc
 </pre>
 
-Setup Vundle
-<pre>
-$ sh ~/.vim/prepare.sh
-</pre>
-or
-<pre>
-$ git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-</pre>
+Then just use Vim ;)
 
-Install Bundles with vundle
-
- * run vim
- * :BundleInstall
- * (restart vim)
+No matter what Vim(eg. gVim, macVim, neoVim and etc...) you are using, It will works. :)
