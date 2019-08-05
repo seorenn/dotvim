@@ -34,8 +34,8 @@ set foldopen=block,hor,mark,percent,quickfix,tag
 set splitbelow
 set splitright
 set vb t_vb=
-iset listchars=extends:>,precedes:<
+set listchars=extends:>,precedes:<
 set clipboard=unnamed
 
 set bg=dark
-synxtax on
+syntax on
