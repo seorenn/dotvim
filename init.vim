@@ -39,3 +39,7 @@ set clipboard=unnamed
 
 set bg=dark
 syntax on
+
+autocmd FileType c,cpp, python setlocal sw=4 ts=4 sts=4
+autocmd FileType javascript,html,css,vue setlocal sw=2 ts=2 sts=2
+autocmd BufNewFile,BufRead *.vue,*.ts,*.tsx: set filetype=html

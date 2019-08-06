@@ -12,9 +12,19 @@ Just clone and link configuration file:
 <pre>
 $ git clone git://github.com/seorenn/dotvim.git
 $ mv dotvim ~/.vim
-$ ln -s ~/.vim/vimrc ~/.vimrc
 </pre>
 
-Then just use Vim ;)
+If your Vim not load this configuration, just link init.vim to .vimrc
 
-No matter what Vim(eg. gVim, macVim, neoVim and etc...) you are using, It will works. :)
+<pre>
+$ ln -s ~/.vim/init.vim ~/.vimrc
+</pre>
+
+If you are using neovim, I recommend link to another configuration path
+
+<pre>
+$ mkdir ~/.config/nvim
+$ ln -s ~/.vim/init.vim ~/.config/nvim/init.vim
+</pre>
+
+Well... this will be done ;)
